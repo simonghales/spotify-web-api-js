@@ -1,7 +1,7 @@
-Spotify Web API JS [![Build Status](https://travis-ci.org/JMPerez/spotify-web-api-js.svg?branch=master)](https://travis-ci.org/JMPerez/spotify-web-api-js) [![Coverage Status](https://coveralls.io/repos/JMPerez/spotify-web-api-js/badge.svg)](https://coveralls.io/r/JMPerez/spotify-web-api-js)
+Spotify Web API JS [![Build Status](https://travis-ci.org/JMPerez/spotify-web-api-js.svg?branch=master)](https://travis-ci.org/JMPerez/spotify-web-api-js) [![Coverage Status](https://coveralls.io/repos/JMPerez/spotify-web-api-js/badge.svg)](https://coveralls.io/r/JMPerez/spotify-web-api-js) [![Greenkeeper badge](https://badges.greenkeeper.io/JMPerez/spotify-web-api-js.svg)](https://greenkeeper.io/)
 ==================
 
-This is a lightweight wrapper for the [Spotify Web API](https://developer.spotify.com/web-api/) (2kB gzipped + compressed). It includes helper functions for **all Spotify's endpoints**, such as fetching metadata (search and look-up of albums, artists, tracks, playlists, new releases) and user's information (follow users, artists and playlists, and saved tracks management).
+This is a lightweight wrapper for the [Spotify Web API](https://developer.spotify.com/web-api/) ([2.4kB gzipped + compressed](https://cost-of-modules.herokuapp.com/?p=spotify-web-api-js)). It includes helper functions for **all Spotify's endpoints**, such as fetching metadata (search and look-up of albums, artists, tracks, playlists, new releases) and user's information (follow users, artists and playlists, and saved tracks management).
 
 It doesn't have any dependencies and supports callbacks and promises. It is intended to be run on a browser, but if you want to use Node.JS to make the requests, please check [spotify-web-api-node](https://github.com/thelinmichael/spotify-web-api-node).
 
@@ -37,6 +37,7 @@ The wrapper includes helper functions to do the following:
 
 #### Personalization
 - Get a user’s top artists and tracks based on calculated affinity
+- Get current user’s recently played tracks
 
 #### Browse
 - Get new releases
@@ -55,6 +56,20 @@ The wrapper includes helper functions to do the following:
 - Unfollow a playlist
 - Get followed artists
 - Check if users are following a Playlist
+
+#### Player
+- Get a user's available devices
+- Get information about the user's current playback
+- Get the user's currently playing track
+- Transfer a user's playback
+- Start/Resume a user's playback
+- Pause a user's playback
+- Skip user's playback to next track
+- Skip user's playback to previous track
+- Seek to position in currently playing track
+- Set repeat mode on user's playback
+- Set volume for user's playback
+- Toggle shuffle for user's playback
 
 ## Installation
 Install via bower (browser):
